@@ -25,7 +25,7 @@
               <a class="nav-link" href="/">PHP Basico<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Funciones</a>
+              <a class="nav-link" href="funciones.html">Funciones</a>
             </li>
         </div>
       </nav>
@@ -71,6 +71,8 @@
         </code>
         </div>
 
+        <hr>
+
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Indexed Array</h2>
           <blockquote>
@@ -96,6 +98,8 @@
           </code>
         </section>
 
+        <hr>
+
         <section class="section mt-t5 mb-5">
           <h2 class="text-center">Anadir un Elemento a un Arreglo</h2>
           <blockquote>Aqui tenemos un Ejemplo de como anadir un elemento a un arreglo.</blockquote>
@@ -114,7 +118,7 @@
         </code>
         </section>
 
-
+        <hr>
 
         <section class="section mt-t5 mb-5">
           <h2 class="text-center">Elimnar Elementos de un Arreglo</h2>
@@ -139,11 +143,10 @@
             <p><strong>Metodo 3</strong></p>
             $arreglo = [1,2,3,5]; <br>
             $eliminar_elemento = array_splice($arreglo, 1,3, array(2,4,5)); <br> <br>
-
           </code>
-
         </section>
 
+        <hr>
 
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Arreglos Asociativos</h2>
@@ -171,6 +174,7 @@
           </code>
         </section>
 
+        <hr>
 
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Arreglos Multidimencionales o Arrays Multidimencionales</h2>
@@ -195,6 +199,8 @@
               print_r($objeto['perros']['raza']);
           </code>
         </section>
+
+        <hr>
 
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Revisar si un Valor Existe dentro de nuestro o de un Arreglo</h2>
@@ -221,6 +227,8 @@
           </code>
         </section>
 
+        <hr>
+
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Iteracion o recorriendo un Arreglo con la funcion <strong>foreach</strong></h2>
           <blockquote>
@@ -229,55 +237,57 @@
             todos
             los productos que nuestro cliente compro.
           </blockquote>
+
+          <code>
+              $carrito = array('laptop', 'mobil', 'monitor'); <br><br>
+    
+              <h4 class="text-center">Carrito de Compras</h4>
+    
+              foreach($carrito as $compras) { <br>
+                echo $compras <br>
+              } <br>
+              endforeach; <br> <br><br>
+    
+              $carrito = array(
+                &nbsp;&nbsp;'articulo1' => 'laptop', <br>
+                &nbsp;&nbsp;'articulo2' => 'mobil', <br>
+                &nbsp;&nbsp;'articulo3' => 'monitor' <br>
+              ); <br><br>
+    
+              foreeach($carrito as $k => $val) { <br>
+                &nbsp;&nbsp; echo $key . ' : ' . $vale; <br>
+              } <br>
+              endforeach
+              <br><br>
+              <p><strong>Asi recorremos recorriendo Arreglos Multidimencionales.</strong></p>
+              $objeto = array( <br> 
+                  &nbsp;&nbsp;'perros' => array( <br>
+                  &nbsp;&nbsp;&nbsp;'raza' => array( <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;'grande' => 'gran danes', <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;'mediano' => 'doberman', <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;'pequeno' => 'chihuahua', <br>
+                      &nbsp;&nbsp;&nbsp;), <br>
+                      &nbsp;&nbsp;), <br>
+              );
+    
+              foreach($objeto['perros'] as $canino) { <br>
+                &nbsp;&nbsp;echo $canino; <br>
+              } <br>
+              endforeach; <br><br>
+              <p><Strong>Para Acceder directamente al dato anidado hacemo lo siguiente.</Strong></p> 
+              foreach($objeto as $canino) { <br>
+                &nbsp;&nbsp; if(array_key_exist('raza', $canino)) { <br>
+                  &nbsp;&nbsp; foreach($canino['raza'] as $can) { <br> 
+                    &nbsp;&nbsp; echo $can; <br>
+                    &nbsp;&nbsp;} <br>
+                    &nbsp;} <br>
+              } <br>
+              endforeach; <br><br>
+    
+            </code>
         </section>
 
-        <code>
-          $carrito = array('laptop', 'mobil', 'monitor'); <br><br>
-
-          <h4 class="text-center">Carrito de Compras</h4>
-
-          foreach($carrito as $compras) { <br>
-            echo $compras <br>
-          } <br>
-          endforeach; <br> <br><br>
-
-          $carrito = array(
-            &nbsp;&nbsp;'articulo1' => 'laptop', <br>
-            &nbsp;&nbsp;'articulo2' => 'mobil', <br>
-            &nbsp;&nbsp;'articulo3' => 'monitor' <br>
-          ); <br><br>
-
-          foreeach($carrito as $k => $val) { <br>
-            &nbsp;&nbsp; echo $key . ' : ' . $vale; <br>
-          } <br>
-          endforeach
-          <br><br>
-          <p><strong>Asi recorremos recorriendo Arreglos Multidimencionales.</strong></p>
-          $objeto = array( <br> 
-              &nbsp;&nbsp;'perros' => array( <br>
-              &nbsp;&nbsp;&nbsp;'raza' => array( <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;'grande' => 'gran danes', <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;'mediano' => 'doberman', <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;'pequeno' => 'chihuahua', <br>
-                  &nbsp;&nbsp;&nbsp;), <br>
-                  &nbsp;&nbsp;), <br>
-          );
-
-          foreach($objeto['perros'] as $canino) { <br>
-            &nbsp;&nbsp;echo $canino; <br>
-          } <br>
-          endforeach; <br><br>
-          <p><Strong>Para Acceder directamente al dato anidado hacemo lo siguiente.</Strong></p> 
-          foreach($objeto as $canino) { <br>
-            &nbsp;&nbsp; if(array_key_exist('raza', $canino)) { <br>
-              &nbsp;&nbsp; foreach($canino['raza'] as $can) { <br> 
-                &nbsp;&nbsp; echo $can; <br>
-                &nbsp;&nbsp;} <br>
-                &nbsp;} <br>
-          } <br>
-          endforeach; <br><br>
-
-        </code>
+        <br>
 
         <section class="section mt-5 mb-5"> 
 
@@ -317,6 +327,7 @@
               </code>
         </section>
 
+        <br>
 
         <section class="section mt-5 mb-5"> 
 
@@ -346,17 +357,12 @@
 
         <section class="section mt-5 mb-5"></section>
 
-
+        <!-- Scroll to Top -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up text-white"></i></button>
       </div> <!-- Column End-->
     </div> <!-- Row End -->
   </div> <!-- Container End -->
 
-  <!-- -->
-  <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    ...
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -367,6 +373,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/71cf908ce5.js"></script>
   <script src="js/app.js"></script>
 </body>
 

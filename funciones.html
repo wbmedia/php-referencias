@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PHP Basics</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Aprende PHP.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">PHP Basico<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funciones.html">Funciones</a>
+        </li>
+    </div>
+  </nav>
+  <header class="hero">
+    <div class="container">
+      <h1 class="text-center">Bienvenido a el documento de Aprende PHP </h1>
+      <p>
+        te doy la bienvenida a este pequeno glosario. si esta aprendiendo php y no sabes donde empezar te
+        recomiendo
+        revisar la documentacion del lenguaje. en este documento te mostrare lo basico del lenguaje que debes
+        saber
+        cuando apenas empiezas sobre las funcionalidades del lenguaje y su uso cotidiano.
+      </p>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2>Funciones PHP</h2>  
+        <hr>      
+
+        <section class="section mt-5 mb-5">
+          <h2>Funcion en PHP</h2>
+          <blockquote>
+            las <strong>funciones</strong> son bloques de codigo donde podemos definir X funcionalidad dentro de
+            nuestro programa. la cual cumple cierta funcionalidad dentro de nuestro scope de esta manera encapsulamos 
+            nuestra logica dentro de nuestro programa para poder ser reutilizados para definir una funcion necesitamos
+            utilizar la palabra resevada <strong>function</strong> seguida por le nombre del mismo.
+
+            las funciones dentro de <strong>PHP OOP</strong> o programacion orientado a Objetos se les conoce como <strong>Metodos</strong>
+            ya que estos dependen de una clase para saber mas  de ellos te invito a leer la documentacion de PHP.
+            en este documento lo analizaremos
+            despues en la seccion de OOP PHP.
+          </blockquote>
+
+          <code>
+            <p><strong>Ejemplo de como escribir una funcion</strong></p>
+
+            function sumar() { <br>
+              &nbsp;$numero1 = 1; <br>
+              &nbsp;$numero1 = 2; <br>
+              &nbsp;$suma = $numero1 + $numero1; <br><br>
+
+              &nbsp;echo $suma; <br>
+            } <br> <br>
+            
+            sumar();
+
+            <p>Ahora llamamos a nuestra funcion para poder utilizarla</p>
+          </code>
+        </section>
+
+        <hr>
+        <section class="section mt-5 mb-5"></section>
+
+        <!-- Scroll to Top -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+            class="fas fa-arrow-circle-up text-white"></i></button>
+      </div> <!-- Column End-->
+    </div> <!-- Row End -->
+  </div> <!-- Container End -->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/71cf908ce5.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
