@@ -9,7 +9,7 @@ body {
 }
 
 p {
-  color: #333;
+  color: #333 !important;
 }
 
 .hero {
@@ -35,8 +35,13 @@ p {
 }
 .hero h1, p {
   position: relative;
-  color: aquamarine;
+  color: #eeeeee;
   z-index: 10;
+}
+
+.btn-hero{
+  position: relative;
+  z-index: 2;
 }
 
 /* Scroll to top */
@@ -60,4 +65,20 @@ p {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+/* Footer */
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+#sticy-footer ul {
+  list-style: none;
+}
+
+#sticky-footer li {
+  display: inline-block;
+  padding: .3rem 1rem;
+  font-size: 1.1rem;
 }

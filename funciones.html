@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="images/icon.png" type="image/png" ">
 </head>
 
 <body>
@@ -31,15 +32,18 @@
     </div>
   </nav>
   <header class="hero">
-    <div class="container">
+    <div class="container text-center">
       <h1 class="text-center">Bienvenido a el documento de Aprende PHP </h1>
-      <p>
+      <p class="text-white">
         te doy la bienvenida a este pequeno glosario. si esta aprendiendo php y no sabes donde empezar te
-        recomiendo
-        revisar la documentacion del lenguaje. en este documento te mostrare lo basico del lenguaje que debes
-        saber
-        cuando apenas empiezas sobre las funcionalidades del lenguaje y su uso cotidiano.
+        recomiendo revisar la documentacion del lenguaje. 
       </p>
+      <p class="text-white">
+          en este documento te mostrare lo basico del lenguaje que debes saber cuando apenas empiezas sobre las funcionalidades del lenguaje y su uso cotidiano.
+      </p>
+      <p class="text-white">si quieres aprender mas de PHP consulta  la siguiente Liga</p>
+      <a target="_blank" href="https://www.php.net/manual/es/" class="btn btn-success btn-hero">Mas de PHP</a>
+      
     </div>
   </header>
 
@@ -81,7 +85,43 @@
         </section>
 
         <hr>
-        <section class="section mt-5 mb-5"></section>
+        <section class="section mt-5 mb-5">
+          <h2>Funciones con Argumentos</h2>
+          <blockquote> las <strong>funciones</strong> conn argumentos son aquella a las que se le pasa 
+          cualquier tipo de informacion. la cual es una lista de expresiones delimitadas por comas. Los argumentos son evaluados de izquierda a derecha.
+          </blockquote>
+
+          <code>
+            function funcion_con_argumetos($valor) { <br>
+              &nbsp; echo $valor; <br>
+            } <br>
+
+            <br>
+            <p>Mandamos llamar nuestra funcion</p> 
+            funcion_con_argumetos();
+          </code>
+        </section>
+
+        <hr>
+
+        <section class="section mt-5 mb-5">
+          <h2>Funciones que retornan un valor</h2>
+          <blockquote>
+            las funciones que retornan un valor con la palabra reservada <strong>return</strong>. en <strong> PHP 7</strong>
+            las funciones o metodos pueden ser asignadas el tipo de dato que deseas que sea retornado. ya sea
+            un entero, un string o un booleano etc. segun lo requieras pero eso lo veremos en la seccion de PHP 7
+          </blockquote>
+
+          <code>
+              function funcion_con_argumetos($valor) { <br>
+                &nbsp; return $valor; <br>
+              } <br>
+  
+              <br>
+              <p>Mandamos llamar nuestra funcion</p> 
+              funcion_con_argumetos();
+          </code>
+        </section>
 
         <!-- Scroll to Top -->
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i
@@ -90,6 +130,23 @@
     </div> <!-- Row End -->
   </div> <!-- Container End -->
 
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <ul>
+          <li>
+            <a  class="text-white" target="_blank" href="https://www.linkedin.com/in/antonionicasio/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+              <a class="text-white" target="_blank" href="http://github.com/wbmedia">
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </li>
+        </ul>
+        <small class="text-white">Copyright &copy; - 2019 Antonio Nicasio </small>
+      </div>
+    </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
