@@ -2,26 +2,35 @@
 
 /* Global CSS */
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%
-    /** Restet for REMS **/
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1rem;
   line-height: 2;
 }
 
-.section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
 }
 
+.hero::after {
+  content: '';
+  background-color: rgba(0,0,0, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero h1, p {
+  position: relative;
+  color: aliceblue;
+  z-index: 10;
+}

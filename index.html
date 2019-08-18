@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHP Basics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PHP Basics</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-
-    <header>
-      <div class="container section">
-        <h1 class="text-center">Welcome To PHP Basics</h1>
-      </div>
-    </header>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Aprende PHP.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">PHP Basico<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Funciones</a>
+            </li>
+        </div>
+      </nav>
+  <header class="hero">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
+      <h1 class="text-center">Bienvenido a el documento de Aprende PHP </h1>
+      <p>
+        te doy la bienvenida a este pequeno glosario. si esta aprendiendo php y no sabes donde empezar te recomiendo
+        revisar la documentacion del lenguaje. en este documento te mostrare lo basico del lenguaje que debes saber 
+        cuando apenas empiezas sobre las funcionalidades del lenguaje y su uso cotidiano.
+      </p>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
 
         <div class="section mt-5 mb-5">
-        <h2 class="text-center">Swicth Use</h2>
-        <blockquote>
-          Tenemos un Ejemplo Sencillo de el uso del siwtch en caso de que tengas que hacer multiples comparaciones
-          de esta manera evitando la mala practica del uso excesivo de <strong>if</strong> and <strong>else</strong>.
-        </blockquote>
-      
-        <code>
+          <h2 class="text-center">Swicth Use</h2>
+          <blockquote>
+            Tenemos un Ejemplo Sencillo de el uso del siwtch en caso de que tengas que hacer multiples comparaciones
+            de esta manera evitando la mala practica del uso excesivo de <strong>if</strong> and <strong>else</strong>.
+          </blockquote>
+
+          <code>
           $lenguaje = "PHP"; <br>
 
             switch($lenguaje) { <br>
@@ -46,12 +70,14 @@
             }
         </code>
         </div>
-    
+
         <section class="section mt-5 mb-5">
-        <h2 class="text-center">Indexed Array</h2>
+          <h2 class="text-center">Indexed Array</h2>
           <blockquote>
-            En esta Seccion podemos saber que es un <strong>Arreglo Indexado</strong> a este podemos acceder a un valor del mismo
-            con el uso de su indice de la posicion donde se almacena en memoria. estos empiezan desde la posicion <strong>0</strong> 
+            En esta Seccion podemos saber que es un <strong>Arreglo Indexado</strong> a este podemos acceder a un valor
+            del mismo
+            con el uso de su indice de la posicion donde se almacena en memoria. estos empiezan desde la posicion
+            <strong>0</strong>
           </blockquote>
 
           <code>
@@ -71,10 +97,10 @@
         </section>
 
         <section class="section mt-t5 mb-5">
-        <h2 class="text-center">Anadir un Elemento a un Arreglo</h2>
-        <blockquote>Aqui tenemos un Ejemplo de como anadir un elemento a un arreglo.</blockquote>
+          <h2 class="text-center">Anadir un Elemento a un Arreglo</h2>
+          <blockquote>Aqui tenemos un Ejemplo de como anadir un elemento a un arreglo.</blockquote>
 
-        <code>
+          <code>
           <p><strong>Nuestro Arreglo Inicial</strong></p>
           $arreglo = ['Elemento 1', 'Elemento2']; <br><br>
           <strong>Agregamos un Nuevo Elemento</strong> <br> <br>
@@ -90,7 +116,7 @@
 
 
 
-        <section class="section mt-t5 mb-5"> 
+        <section class="section mt-t5 mb-5">
           <h2 class="text-center">Elimnar Elementos de un Arreglo</h2>
           <blockquote>Ejemplo de Elimar Elemento</blockquote>
           <code>
@@ -122,8 +148,8 @@
         <section class="section mt-5 mb-5">
           <h2 class="text-center">Arreglos Asociativos</h2>
           <blockquote>
-          los arreglos asociativos se conocen asi por que puedes acceder a uno de los 
-          elementos por medio de su llave o valor
+            los arreglos asociativos se conocen asi por que puedes acceder a uno de los
+            elementos por medio de su llave o valor
           </blockquote>
           <code>
           <p><strong>Ejemplo de un arreglo asociativo</strong></p>
@@ -147,26 +173,201 @@
 
 
         <section class="section mt-5 mb-5">
+          <h2 class="text-center">Arreglos Multidimencionales o Arrays Multidimencionales</h2>
+          <blockquote>El arreglo Multidimencional se diferiencia por tener varios arreglos o <strong>Arrays</strong>
+            anidados dentro del o de un
+            Arreglo Padre. </strong>.
+          </blockquote>
 
+          <code>
+              $objeto = array( <br> 
+              &nbsp;&nbsp;'perros' => array( <br>
+              &nbsp;&nbsp;&nbsp;'raza' => array( <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'grande' => 'gran danes', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'mediano' => 'doberman', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'pequeno' => 'chihuahua', <br>
+                  &nbsp;&nbsp;&nbsp;), <br>
+                  &nbsp;&nbsp;), <br>
+              );
+              <br><br>
+              <p>Puedes Accede a las proiedades del mismo de la siguiente manera. recoriendo el <strong>Data</strong> del mismo</p>
+
+              print_r($objeto['perros']['raza']);
+          </code>
         </section>
 
-        <section class="section mt-5 mb-5"></section>
+        <section class="section mt-5 mb-5">
+          <h2 class="text-center">Revisar si un Valor Existe dentro de nuestro o de un Arreglo</h2>
+
+          <blockquote></blockquote>
+
+          <code>
+            <p>Esto funciona en un <strong>Arreglo Indexado</strong></p>
+              $arreglo = ['hola', 'soy', 'un', 'arreglo'];
+              existe_elemento = in_array['hola', $arreglo]; <br><br><br>
+            <p>Para revisar denteo de un <strong>Arreglo Multidimencional</strong> hacemos lo siguiente</p>
+            $objeto = array( <br> 
+              &nbsp;&nbsp;'perros' => array( <br>
+              &nbsp;&nbsp;&nbsp;'raza' => array( <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'grande' => 'gran danes', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'mediano' => 'doberman', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'pequeno' => 'chihuahua', <br>
+                  &nbsp;&nbsp;&nbsp;), <br>
+                  &nbsp;&nbsp;), <br>
+              );
+              <br><br><br>
+              <p>aqui verificamos y accedemos su el elemento exite dentro del <strong>Arreglo</strong></p>
+              $existe_elemento = in_array('un', array_values($objeto));
+          </code>
+        </section>
+
+        <section class="section mt-5 mb-5">
+          <h2 class="text-center">Iteracion o recorriendo un Arreglo con la funcion <strong>foreach</strong></h2>
+          <blockquote>
+            Este funcion es utilizada cada que vamos a recorrer un arreglo de algunos datos de nuestro programa
+            unn ejemplo de ello es muy comun cuando tenemos un carrito de compras y en el checkout queremos imprimir
+            todos
+            los productos que nuestro cliente compro.
+          </blockquote>
+        </section>
+
+        <code>
+          $carrito = array('laptop', 'mobil', 'monitor'); <br><br>
+
+          <h4 class="text-center">Carrito de Compras</h4>
+
+          foreach($carrito as $compras) { <br>
+            echo $compras <br>
+          } <br>
+          endforeach; <br> <br><br>
+
+          $carrito = array(
+            &nbsp;&nbsp;'articulo1' => 'laptop', <br>
+            &nbsp;&nbsp;'articulo2' => 'mobil', <br>
+            &nbsp;&nbsp;'articulo3' => 'monitor' <br>
+          ); <br><br>
+
+          foreeach($carrito as $k => $val) { <br>
+            &nbsp;&nbsp; echo $key . ' : ' . $vale; <br>
+          } <br>
+          endforeach
+          <br><br>
+          <p><strong>Asi recorremos recorriendo Arreglos Multidimencionales.</strong></p>
+          $objeto = array( <br> 
+              &nbsp;&nbsp;'perros' => array( <br>
+              &nbsp;&nbsp;&nbsp;'raza' => array( <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'grande' => 'gran danes', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'mediano' => 'doberman', <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;'pequeno' => 'chihuahua', <br>
+                  &nbsp;&nbsp;&nbsp;), <br>
+                  &nbsp;&nbsp;), <br>
+          );
+
+          foreach($objeto['perros'] as $canino) { <br>
+            &nbsp;&nbsp;echo $canino; <br>
+          } <br>
+          endforeach; <br><br>
+          <p><Strong>Para Acceder directamente al dato anidado hacemo lo siguiente.</Strong></p> 
+          foreach($objeto as $canino) { <br>
+            &nbsp;&nbsp; if(array_key_exist('raza', $canino)) { <br>
+              &nbsp;&nbsp; foreach($canino['raza'] as $can) { <br> 
+                &nbsp;&nbsp; echo $can; <br>
+                &nbsp;&nbsp;} <br>
+                &nbsp;} <br>
+          } <br>
+          endforeach; <br><br>
+
+        </code>
+
+        <section class="section mt-5 mb-5"> 
+
+          <h2 class="text-center"><strong>For</strong> loop</h2>
         
-      
-        </div> <!-- Column End-->
-      </div> <!-- Row End -->
-    </div> <!-- Container End -->
+          <blockquote>
+              en este seccion analizaremos el <strong>for</strong> loop el cual es muy comun cuando necesitamos buscar un
+              valor en espefico en alguna operacion o algoritmo de dificultas sencilla, media o compleja.</blockquote>
+            <p>Aqui vemos el uso de for en un algoritmo al <strong>Rotar un Arreglo</strong>.</p>
+            <code>
+                  function leftRotatebyOne(&$arr, $n) <br>
+                  { <br>
+                    &nbsp;&nbsp; $temp = $arr[0]; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for ($i = 0; $i < $n - 1; $i++) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;$arr[$i] = $arr[$i + 1]; <br>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp; $arr[$i] = $temp; <br>
+                  } <br> <br>
+                    
+                  function leftRotate(&$arr, $d, $n) <br>
+                  { <br>
+                    &nbsp;&nbsp; for ($i = 0; $i < $d; $i++) <br>
+                    &nbsp; &nbsp;&nbsp; leftRotatebyOne($arr, $n); <br>
+                  } <br> <br><br>
+                    
+                  function printArray(&$arr, $n) <br>
+                  { <br>
+                    &nbsp;&nbsp;&nbsp; for ($i = 0; $i < $n; $i++) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  echo $arr[$i] . " "; <br>
+                  } <br>
+                    
+                  $arr = array( 1, 2, 3, 4, 5, 6, 7 ); <br> <br>
+                  $n = sizeof($arr); <br> <br>
+                    
+                  leftRotate($arr, 2, $n); <br><br>
+                  printArray($arr, $n); <br>
+              </code>
+        </section>
 
-    <!-- -->
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+
+        <section class="section mt-5 mb-5"> 
+
+            <h2 class="text-center"><strong>While</strong></h2>
+          
+            <blockquote>
+              en esta seccion veremos el uso de while
+            </blockquote>
+
+            <code>
+              <p>Creamos nuestro arreglo</p>
+              $equipos  = array('barcelona', 'manchester', 'chicago', 'tijuana'); <br>
+
+              <p>creamos una variable con nuestro indice.</p>
+
+              $i = 0;
+
+              while($i <= count($equipos)) {  <br>
+                if(count($equipos) <  0) <br> { <br>
+                    echo $equipos[$i];
+                }
+              }
+
+              <p>Aqui ya tu puedes ir haciendolo mas complejo segun sea tu funcinalidad</p>
+            </code>
+          </section>
+
+        <section class="section mt-5 mb-5"></section>
+
+
+      </div> <!-- Column End-->
+    </div> <!-- Row End -->
+  </div> <!-- Container End -->
+
+  <!-- -->
+  <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
-      ...
-    </div>
+    ...
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
